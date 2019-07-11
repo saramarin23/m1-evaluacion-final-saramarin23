@@ -75,8 +75,13 @@
 }
 
 @media all and (min-width: 1280px) {
+	.page__hero--container {
+		width: 730px;
+	}
+	
 	.page__hero--title {
 		font-size: 100px;
+		line-height: 132px;
 	}
 
 	.page__hero--text {
@@ -133,19 +138,22 @@
 }
 
 @media all and (min-width: 768px) {
-	
 	.section__1 {
-		width: 90vw;
-		margin: 0;
+		width: 690px;
 	}
-
-	.go__button {
+	.section__1--button {
 		margin-bottom: 60px;
+		width: 91px;
 	}
 }
 
 @media all and (min-width: 1280px) {
-	.go__button {
+	.section__1 {
+		width: 730px;
+		margin-top: 60px;
+	}
+	
+	.section__1--button{
 		width: 160px;
 	}
 
@@ -163,6 +171,7 @@
 	font-size: 24px;
 	font-family: $font-title;
 	font-weight: bold;
+	margin: 0;
 }
 
 .section__2--button {

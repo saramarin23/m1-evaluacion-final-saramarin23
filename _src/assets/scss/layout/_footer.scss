@@ -1,0 +1,42 @@
+@import "core/settings";
+@import "components/buttons";
+
+.page__footer {
+  background-color: #304268;
+  color: $secondary-text-color;
+  font-family: $font-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+}
+
+.footer__icon {
+  position: absolute;
+  transform: translate(275%, -50%);
+}
+.footer__container {
+  width: 290px;
+}
+
+.footer__links {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__links--url {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page__footer--copyright {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__heart {
+  color: #f26002;
+}

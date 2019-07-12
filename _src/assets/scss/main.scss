@@ -13,31 +13,30 @@
   background-position: center;
   height: 100vh;
   display: flex;
-}
 
-.page__hero--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  bottom: 0;
-  margin: 0 auto;
-  width: 290px;
-}
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    margin: 0 auto;
+    width: 290px;
+  }
 
-.page__hero--title {
-  color: $secondary-text-color;
-  font-family: $font-title;
-  font-weight: bold;
-  text-align: center;
-  font-size: 42px;
-  line-height: 1.31;
-  text-transform: uppercase;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  margin: 0;
-}
+  &--title {
+    color: $secondary-text-color;
+    font-family: $font-title;
+    font-weight: bold;
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.31;
+    text-transform: uppercase;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 0;
+  }
 
-.page__hero--text {
+  &--text {
   color: $secondary-text-color;
   font-family: $font-text;
   font-size: 16px;
@@ -98,48 +97,49 @@
   flex-direction: column;
   margin: 0 auto;
   margin-top: 30px;
-}
 
-.section__1--desc {
-  color: $section1-desc;
-  font-family: $font-text;
-  font-size: 14px;
-  margin: 0;
-}
+  &--desc {
+    color: $section1-desc;
+    font-family: $font-text;
+    font-size: 14px;
+    margin: 0;
+  }
 
-.section__1--title {
-  color: $text-color;
-  font-family: $font-title;
-  size: 24px;
-  margin-bottom: 15px;
-}
+  &--title {
+    color: $text-color;
+    font-family: $font-title;
+    size: 24px;
+    margin-bottom: 15px;
+  }
 
-.section__1--text {
-  color: $section1-text;
-  font-size: 18px;
-  margin: 0;
-}
+  &--text {
+    color: $section1-text;
+    font-size: 18px;
+    margin: 0;
+    }
 
-.section__1--button {
-  color: $buttons-color;
-  border: 1px solid $buttons-color;
-  width: 76px;
-  height: 45px;
-  border-radius: 22.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 45px;
-  margin-top: 30px;
+  &--button {
+    color: $buttons-color;
+    border: 1px solid $buttons-color;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 30px;
+  }
 }
 
 @media all and (min-width: 768px) {
   .section__1 {
     width: 690px;
-  }
-  .section__1--button {
+
+  &--button {
     margin-bottom: 60px;
     width: 91px;
+    
   }
 }
 
@@ -147,18 +147,18 @@
   .section__1 {
     width: 730px;
     margin-top: 60px;
-  }
 
-  .section__1--title {
-    font-size: 32px;
-  }
+    &--title {
+      font-size: 32px;
+    }
 
-  .section__1--desc {
-    font-size: 16px;
-  }
+    &--desc {
+      font-size: 16px;
+    }
 
-  .section__1--button {
-    width: 160px;
+    &--button {
+      width: 160px;
+    }
   }
 }
 
@@ -169,56 +169,54 @@
   text-align: center;
   display: flex;
   justify-content: center;
-}
 
-.section2__grid {
-  display: grid;
-  grid-template-columns: 290px;
-  grid-template-rows: 105px auto auto auto 150px;
-  align-items: center;
-}
+  &__grid {
+    display: grid;
+    grid-template-columns: 290px;
+    grid-template-rows: 105px auto auto auto 150px;
+    align-items: center;
+  }
 
-.section2__title {
-  font-size: 24px;
-  font-family: $font-title;
-  font-weight: bold;
-  margin-bottom: 45px;
-  height: 30px;
-}
+  &__title {
+    font-size: 24px;
+    font-family: $font-title;
+    font-weight: bold;
+    margin-bottom: 45px;
+    height: 30px;
+  }
 
-.section2__reason {
-  /* height: 100px; */
+  &__reason {
+    max-width: 180px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  
+    &--title {
+      margin: 0;
+      font-size: 18px;
+      font-family: $font-title;
+    }
 
-  max-width: 180px;
-  margin: 0 auto;
-  margin-bottom: 45px;
-}
+    &--text {
+    margin: 0;
+    font-size: 18px;
+    font-family: $font-text;
+    }
+  }
 
-.section2__reason--title {
-  margin: 0;
-  font-size: 18px;
-  font-family: $font-title;
-}
-
-.section2__reason--text {
-  margin: 0;
-  font-size: 18px;
-  font-family: $font-text;
-}
-
-.section2__button {
-  background-color: $buttons-color;
-  color: $secondary-text-color;
-  width: 184px;
-  height: 45px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 22.5px;
-  margin: auto;
-  margin-bottom: 60px;
-  margin-top: 45px;
+  &__button {
+    background-color: $buttons-color;
+    color: $secondary-text-color;
+    width: 184px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22.5px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 45px;
+  }
 }
 
 @media all and (min-width: 768px) {

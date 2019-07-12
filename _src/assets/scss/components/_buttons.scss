@@ -1,16 +1,14 @@
 .button {
-    position: static;
-    width: 45px;
-    height: 45px;
-    border-radius: 22.5px;
-    background-color: $secondary-text-color;
-    font-family: $font-text;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  font-family: $font-text;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover {
-        transition: opacity 1.5s;
-        text-decoration: underline;
-    }
+  &:hover {
+    transition: opacity 1.5s;
+  }
 }

@@ -1,4 +1,5 @@
-@import "core/settings";
+@import "core/variables";
+@import "components/typography";
 @import "core/reset";
 @import "layout/header";
 @import "layout/footer";
@@ -100,7 +101,7 @@
 }
 
 .section__1--desc {
-  color: #8ccbea;
+  color: $section1-desc;
   font-family: $font-text;
   font-size: 14px;
   margin: 0;
@@ -114,7 +115,7 @@
 }
 
 .section__1--text {
-  color: #4a4a4a;
+  color: $section1-text;
   font-size: 18px;
   margin: 0;
 }
@@ -148,6 +149,14 @@
     margin-top: 60px;
   }
 
+  .section__1--title {
+    font-size: 32px;
+  }
+
+  .section__1--desc {
+    font-size: 16px;
+  }
+
   .section__1--button {
     width: 160px;
   }
@@ -156,17 +165,17 @@
 /* SECTION 2 */
 
 .section2 {
-  background-color: #eff9ff;
+  background-color: $section2-color;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .section2__grid {
-	display: grid;
-	grid-template-columns: 290px;
-	grid-template-rows: 105px auto auto auto 150px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: 290px;
+  grid-template-rows: 105px auto auto auto 150px;
+  align-items: center;
 }
 
 .section2__title {
@@ -178,22 +187,23 @@
 }
 
 .section2__reason {
-	/* height: 100px; */
-	
-	max-width: 180px;
-	margin: 0 auto;
-	margin-bottom: 45px;
-	
+  /* height: 100px; */
+
+  max-width: 180px;
+  margin: 0 auto;
+  margin-bottom: 45px;
 }
 
 .section2__reason--title {
-	margin: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: $font-title;
 }
 
 .section2__reason--text {
-	margin: 0;
-	font-size: 18px;
-	font-family: $font-text;
+  margin: 0;
+  font-size: 18px;
+  font-family: $font-text;
 }
 
 .section2__button {
@@ -212,5 +222,4 @@
 }
 
 @media all and (min-width: 768px) {
-
 }

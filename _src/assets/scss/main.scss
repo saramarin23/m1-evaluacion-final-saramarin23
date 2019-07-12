@@ -248,8 +248,8 @@
 }
 @media all and (min-width: 1280px) {
   .section2__grid {
-    grid-template-columns: 353.8px 1fr 1fr;
-    grid-template-rows: 105px 128px 105px;
+    grid-template-columns: auto 210px 1fr;
+    grid-template-rows: 150px 128px auto;
   }
 
   .section2__title {

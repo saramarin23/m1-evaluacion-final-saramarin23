@@ -10,6 +10,7 @@
 }
 
 .footer__icon {
+  background-color: $secondary-text-color;
   position: absolute;
   transform: translate(0, -125%);
   animation: up 2s ease-in infinite;

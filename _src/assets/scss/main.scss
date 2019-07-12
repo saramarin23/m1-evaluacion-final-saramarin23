@@ -173,6 +173,13 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 290px;
+    grid-template-rows: 105px auto 150px;
+  }
 
   &__title {
   font-size: 24px;
@@ -180,6 +187,7 @@
   font-weight: bold;
   margin: 0;
   height: 30px;
+  margin-top: 30px;
 }
 
   &__reason {
@@ -189,14 +197,13 @@
 }
 
   &__button {
-    width: 45px;
+    width: 184px;
     height: 45px;
+    margin: 0 auto 60px;
     border-radius: 22.5px;
-    background-color: $secondary-text-color;
+    background-color: $buttons-color;
+    color: $secondary-text-color;
     font-family: $font-text;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 

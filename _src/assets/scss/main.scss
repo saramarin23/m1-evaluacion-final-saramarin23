@@ -178,7 +178,8 @@
   &__grid {
     display: grid;
     grid-template-columns: 290px;
-    grid-template-rows: 105px auto 150px;
+    grid-template-rows: 60px auto auto auto auto;
+    grid-gap: 45px;
   }
 
   &__title {
@@ -194,6 +195,15 @@
   max-width: 180px;
   margin: 0 auto;
   line-height: 30px;
+
+  &--title {
+    margin: 0;
+  }
+
+  &--text {
+    margin: 0;
+    font-size: 18px;
+  }
 }
 
   &__button {

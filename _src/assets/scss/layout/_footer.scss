@@ -5,31 +5,48 @@
   background-color: #304268;
   color: $secondary-text-color;
   font-family: $font-text;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 45px;
 }
 
 .footer__icon {
   position: absolute;
-  transform: translate(275%, -50%);
+  transform: translate(0, -125%);
+  animation: up 2s ease-in infinite;
 }
+
+@keyframes up {
+  0% {
+    transform: translate(0, -100%);
+  }
+  50% {
+    transform: translate(0, -150%)
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
 .footer__container {
   width: 290px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .footer__links {
   list-style: none;
-  margin-top: 30px;
+  padding: 30px;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 .footer__links--url {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .page__footer--copyright {

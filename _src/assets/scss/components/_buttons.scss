@@ -7,4 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.button:hover {
+    transition: opacity 1.5s;
 }

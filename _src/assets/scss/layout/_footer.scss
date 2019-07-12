@@ -82,6 +82,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    max-width: 690px;
   }
 
   .footer__copyright {
@@ -89,12 +90,11 @@
     max-width: 210px;
   }
   .nav {
-    max-width: 290px;
   }
 }
 
 @media all and (min-width: 1280px) {
   .footer__container {
-    max-width: 539px;
+    max-width: 560px;
   }
 }

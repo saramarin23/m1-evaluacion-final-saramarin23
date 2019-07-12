@@ -37,10 +37,10 @@
   }
 
   &--text {
-  color: $secondary-text-color;
-  font-family: $font-text;
-  font-size: 16px;
-  margin-top: 10px;
+    color: $secondary-text-color;
+    font-family: $font-text;
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
 
@@ -74,16 +74,16 @@
   .page__hero--container {
     width: 730px;
   }
-  
+
   .page__hero--title {
     font-size: 100px;
     line-height: 132px;
   }
-  
+
   .page__hero--text {
     font-size: 24px;
   }
-  
+
   .icon__hero {
     margin-top: 6px;
     margin-bottom: 13px;
@@ -91,7 +91,6 @@
 }
 
 /* SECTION 1 */
-
 
 .section__1 {
   width: 290px;
@@ -119,7 +118,7 @@
     font-family: $font-text;
     font-size: 18px;
     margin: 0;
-    }
+  }
 
   &--button {
     color: $buttons-color;
@@ -150,7 +149,6 @@
     &--button {
       margin-bottom: 60px;
       width: 91px;
-      
     }
   }
 }
@@ -190,28 +188,28 @@
   }
 
   &__title {
-  font-size: 24px;
-  font-family: $font-title;
-  font-weight: bold;
-  margin: 0;
-  height: 30px;
-  margin-top: 30px;
-}
+    font-size: 24px;
+    font-family: $font-title;
+    font-weight: bold;
+    margin: 0;
+    height: 30px;
+    margin-top: 30px;
+  }
 
   &__reason {
-  max-width: 180px;
-  margin: 0 auto;
-  line-height: 30px;
+    max-width: 180px;
+    margin: 0 auto;
+    line-height: 30px;
 
-  &--title {
-    margin: 0;
-  }
+    &--title {
+      margin: 0;
+    }
 
-  &--text {
-    margin: 0;
-    font-size: 18px;
+    &--text {
+      margin: 0;
+      font-size: 18px;
+    }
   }
-}
 
   &__button {
     width: 184px;
@@ -253,6 +251,7 @@
     margin-top: 15px;
   }
 }
+
 @media all and (min-width: 1280px) {
   .section2__grid {
     grid-template-columns: auto 210px 1fr;
@@ -271,4 +270,4 @@
   .section2__button {
     width: 255px;
   }
-} 
+}

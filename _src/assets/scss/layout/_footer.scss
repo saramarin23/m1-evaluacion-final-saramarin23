@@ -9,6 +9,7 @@
   padding-top: 45px;
   padding-bottom: 45px;
   display: flex;
+  justify-content: center;
 
   &__container {
     width: 290px;
@@ -37,7 +38,7 @@
     text-align: center;
     align-content: center;
     margin-top: 15px;
-  
+
     &--year {
       text-align: center;
       font-size: 14px;
@@ -52,24 +53,40 @@
   &__icon {
     background-color: $secondary-text-color;
     position: absolute;
-    transform: translate(0, -125%);
+    transform: translate(0, -145%);
     animation: up 2s ease-in infinite;
   }
-}
+} 
 
 @keyframes up {
   0% {
-    transform: translate(0, -100%);
+    transform: scale(1);
   }
   50% {
-    transform: translate(0, -150%);
+    transform: scale(1.5);
   }
   100% {
-    transform: translate(0, -100%);
+    transform: scale(1);
   }
 }
 
 .nav {
   padding: 15px;
   justify-content: center;
+} 
+@media all and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }  
+  
+  .footer__copyright {
+    order: -1;
+    max-width: 210px;
+  }
+  .nav {
+    max-width: 290px;
+  }
 }
+

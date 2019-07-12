@@ -9,6 +9,7 @@
   align-items: center;
 
   &:hover {
-    transition: opacity 1.5s;
+    color: $footer-color;
+    transition: color ease 0.7s;
   }
 }

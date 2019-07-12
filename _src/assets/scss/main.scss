@@ -203,9 +203,12 @@
 
     &--title {
       margin: 0;
+      font-family: $font-title;
+      font-size: 18px;
     }
 
     &--text {
+      font-family: $font-text;
       margin: 0;
       font-size: 18px;
     }

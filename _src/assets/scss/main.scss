@@ -214,20 +214,50 @@
 
 @media all and (min-width: 768px) {
 
-
   .section2__grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 64px 1fr;
+    grid-template-rows: 75px 112px 1fr;
     grid-gap: 30px;
   }
   .section2__title {
     grid-column: span 3;
     margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+
+  .section2__reason--title {
+    font-size: 24px;
+  }
+
+  .section2__reason--text {
+    font-size: 20px;
   }
 
   .section2__button {
     width: 210px;
     grid-column: span 3;
+    margin-top: 15px;
+  }
+
+  @media all and (min-width: 1280px) {
+    .section2__grid {
+      grid-template-rows: 105px 112px 105px;
+    }
+    
+    .section2__title {
+      margin-top: 60px;
+      font-size: 32px;
+    }
+
+    .section2__reason {
+      max-width: 353.8px;
+    }
+
+    .section2__button {
+      width: 255px;
+    }
+
   }
 
 }
